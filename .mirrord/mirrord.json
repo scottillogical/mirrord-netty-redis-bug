@@ -1,0 +1,9 @@
+{
+    "agent": {
+        "namespace": "scott-mirrord-test",
+        "log_level": "mirrord=trace"
+    },
+    "internal_proxy": {
+        "log_level": "mirrord_intproxy=trace"
+    }
+}

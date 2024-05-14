@@ -1,0 +1,33 @@
+plugins {
+    id "java"
+    id "application"
+    id "groovy"
+}
+
+mainClassName = "test.Bootstrap"
+def redissonVersion = '3.11.1'
+sourceSets.main.java.srcDirs = ["src/main/java/test"]
+sourceSets.main.java.srcDirs = ["src"]
+
+project(':server') {
+    sourceSets.main.java.srcDirs = ["src"]
+    sourceCompatibility = 1.8
+    application {
+        mainClassName = "zipcar.Bootstrap"
+    }
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: 'java'
+    dependencies {
+       // runtimeOnly("io.netty:netty-resolver-dns-native-macos:4.1.109.Final:osx-x86_64")
+        compile "org.redisson:redisson:$redissonVersion"
+//
+//        compile 'org.glassfish:javax.el:3.0.1-b09'
+//
+//        compile "org.codehaus.gpars:gpars:1.2.1"
+//        compile "com.googlecode.libphonenumber:libphonenumber:8.10.0"
+//        compile "commons-net:commons-net:3.6"
+    }
+}

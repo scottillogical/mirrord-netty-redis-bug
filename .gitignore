@@ -1,0 +1,24 @@
+**/target
+**/.settings
+lib
+
+# GRADLE IGNORES
+**/.gradle
+gradle/*
+**/build
+**/.idea
+**/*.iml
+gradlew
+gradlew.bat
+gradle/wrapper/
+
+
+**/*.iws
+**/*.log
+**/*.log.*
+**/deploy/
+**/atlassian-ide-plugin.xml
+**/out
+lib/cheetah-sdk-*
+server/template-project.properties
+
