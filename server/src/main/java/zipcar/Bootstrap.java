@@ -20,7 +20,7 @@ public class Bootstrap {
 
     public static void main(String[] args) {
         Config config = new Config();
-        config.useSingleServer().setAddress("redis://cheetah-redis-master.scott1.svc.cluster.local:6379");
+        config.useSingleServer().setAddress("redis://cheetah-redis-master.scott-mirrord-test.svc.cluster.local:6379");
         //  config.useSingleServer().setAddress("redis://localhost:6379");
         RedissonClient redisson = Redisson.create(config);
         RSet<String> set = redisson.getSet("mySet");

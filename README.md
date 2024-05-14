@@ -29,9 +29,11 @@ Start app in IntelliJ
    4. Enter /Users/<username>/.sdkman/candidates/gradle/current in textbox
    5. In gradle jvm section, select oracle 1.8
 3. Open boostrap.java
+4. Enable mirrord
 4. Click the green arrow to start project
+5. Select targetless
 
-Confirm if app wrote key successfully
+Expected: no errors, key written successfully
 ```
 echo "KEYS *" | mirrord exec -a scott-mirrord-test redis-cli -- -h cheetah-redis-master.scott-mirrord-test.svc.cluster.local
 
