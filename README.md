@@ -20,7 +20,7 @@ Setup
    3. Confirm you can connect to redid using mirrord
       1. echo "KEYS *" | mirrord exec -a scott-mirrord-test redis-cli -- -h cheetah-redis-master.scott-mirrord-test.svc.cluster.local
 
-Start app in IntelliJ
+Start app in IntelliJ (it did not work via cli either in my testing, but I coudlnt get this sample app to boot using gradle run)
 1. Import app into IntelliJ as a gradle project
 2. Specify gradle version
    1. Open gradle toolbar
