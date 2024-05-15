@@ -9,7 +9,7 @@ Setup
    1. Install jenv [Manage your Java environment](https://www.jenv.be/)
    2. Download java 8
    3. https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html
-   4. jenv add /System/Library/Java/JavaVirtualMachines/<version>/Contents/Home |
+   4. jenv add /System/Library/Java/JavaVirtualMachines/$JAVA_VERSION/Contents/Home
 2. install grade 6.1
    1. install sdkman [Installation - SDKMAN! the Software Development Kit Manager](https://sdkman.io/install)
    2. sdk install grade 6.1
@@ -26,7 +26,7 @@ Start app in IntelliJ (it did not work via cli either in my testing, but I coudl
    1. Open gradle toolbar
    2. Select wrench icon - gradle settings
    3. Select “specified location” in “Use gradle from” dropdown
-   4. Enter /Users/<username>/.sdkman/candidates/gradle/current in textbox
+   4. Enter /Users/$USERNAME/.sdkman/candidates/gradle/current in textbox
    5. In gradle jvm section, select oracle 1.8
 3. Open boostrap.java
 4. Enable mirrord
