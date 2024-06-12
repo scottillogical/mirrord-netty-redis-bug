@@ -1,5 +1,6 @@
 This is an example app intended to reproduce issues talking to redis in k8s using redisson/netty via mirrord
 
+update: the issue was that I needed to run "telepresence quit" first to avoid dns conflicts 
 Prereqs
 K8s
 IntelliJ
